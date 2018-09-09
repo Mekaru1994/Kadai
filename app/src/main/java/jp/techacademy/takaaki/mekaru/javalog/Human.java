@@ -6,8 +6,6 @@ class Human extends Animal implements Thinkable {
     static String Human = "人";
 
     // 変数
-    String name;       // 名前
-    int age;           // 年齢
     String hobby;      // 趣味
 
     //引数付きコンストラクタ
@@ -20,10 +18,11 @@ class Human extends Animal implements Thinkable {
     // メソッド
     @Override
     public void say() {
-        Log.d("javatest", "(私は" + this.name + "です。)" + "(年は" + this.age + "歳です。)");
+        Log.d("javatest", "私の名前は" + this.name + "です。" + "年は" + this.age + "歳です。");
+    }
+    public void think() {
+        Log.d("javatest",  "私は" + this.hobby + "について考える。" );
     }
 
-    public void think() {
-        Log.d("javatest",  "(私の趣味は" + this.hobby + "です。)" );
-    }
+
 }

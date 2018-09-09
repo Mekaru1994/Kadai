@@ -15,8 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
         Human human = new Human("山田次郎", 25, "映画鑑賞");     // 名前を山田太郎、年齢25歳で、Humanのインスタンスを作る
 
-        human.think();
         human.say();
+        human.think();
+
 
             }
 }
